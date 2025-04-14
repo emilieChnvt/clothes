@@ -7,6 +7,7 @@
     <div>
         <p>{{ tshirt.color }}</p>
         <p>{{ tshirt.size }}</p>
+        <a href="{{ path('tshirt_show',{ id : tshirt.id}) }}">voir plus</a>
     </div>
     <hr>
 {% endfor %}

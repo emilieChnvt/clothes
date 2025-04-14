@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TshirtController!{% endblock %}
+
+{% block body %}
+        <div>
+            <p>{{ tshirt.color }}</p>
+            <p>{{ tshirt.size }}</p>
+            <a href="{{ path('app_tshirt',{ id : tshirt.id}) }}">voir moins</a>
+        </div>
+        <hr>
+
+{% endblock %}

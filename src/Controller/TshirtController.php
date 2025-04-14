@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Tshirt;
 use App\Repository\TshirtRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,4 +18,13 @@ final class TshirtController extends AbstractController
             'tshirts' => $tshirts,
         ]);
     }
+
+    #[Route('/tshirt/{id}', name: 'tshirt_show')]
+    public function show(Tshirt $tshirt): Response
+    {
+        return $this->render('tshirt/show.html.twig', [
+            'tshirt' => $tshirt,
+        ]);
+    }
+
 }
