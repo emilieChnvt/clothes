@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+    {{ form_widget  (form.color) }}
+
+    {{ form_row(form.size) }}
+
+
+    <button type="submit">Mon bouton à moi</button>
+    {{ form_end(form) }}
+{% endblock %}

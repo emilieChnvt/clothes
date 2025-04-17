@@ -9,6 +9,7 @@
         <p>{{ tshirt.size }}</p>
         <a href="{{ path('tshirt_show',{ id : tshirt.id}) }}">voir plus</a>
         <a href="{{ path('tshirt_delete',{ id : tshirt.id}) }}">supp</a>
+        <a href="{{ path('tshirt_edit',{ id : tshirt.id}) }}">edit</a>
     </div>
     <hr>
 {% endfor %}
